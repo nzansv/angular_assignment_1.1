@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, Output, EventEmitter, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-add-record',
@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-record.component.css']
 })
 export class AddRecordComponent implements OnInit {
-
   constructor() { }
+
+  distance = '';
 
   ngOnInit(): void {
   }
