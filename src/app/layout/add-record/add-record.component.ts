@@ -1,4 +1,5 @@
 import {Component, Input, Output, EventEmitter, OnInit} from '@angular/core';
+import {FormControl, FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-add-record',
@@ -8,9 +9,17 @@ import {Component, Input, Output, EventEmitter, OnInit} from '@angular/core';
 export class AddRecordComponent implements OnInit {
   constructor() { }
 
-  distance = '';
+    recordForm = new FormGroup({
+    date: new FormControl(''),
+    distance: new FormControl(''),
+    time: new FormControl('')
+  });
 
   ngOnInit(): void {
+  }
+
+  ShareValue(){
+    console.log(this.recordForm.value);
   }
 
 }

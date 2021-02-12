@@ -5,9 +5,6 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./results.component.css']
 })
 export class ResultsComponent implements OnInit {
-
-  @Input() distance: string;
-
   constructor() { }
 
   ngOnInit(): void {

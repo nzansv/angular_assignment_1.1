@@ -7,8 +7,6 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
 
-  @Input() distance: string;
-
   constructor() { }
 
   ngOnInit(): void {
